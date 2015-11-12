@@ -1,12 +1,119 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:showIn="@layout/activity_main"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivityFragment">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/big_pile_of_leaves"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/icon"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="16dp"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="A GREAT BIG PILE OF LEAVES"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FF59302A"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:gravity="center"
+            android:text="HAVE YOU SEEN MY PREFRONTAL CORTEX?"
+            android:textSize="7.5sp"
+            android:textStyle="bold"
+            android:textColor="#FF9F5F38"/>
+
+        <io.intrepid.socialtunes.ui.ClippedFrameLayout
+            android:id="@+id/share_container"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FF59302A"
+            android:foreground="@android:color/white"
+            >
+            <FrameLayout
+                android:id="@+id/sharing_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/ripple"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    >
+                    <ImageView
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/social_media_twitter"
+                        android:contentDescription="Share with Twitter"/>
+                    <ImageView
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/social_media_google"
+                        android:contentDescription="Share with Google"/>
+                    <ImageView
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/social_media_facebook"
+                        android:contentDescription="Share with Facebook"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:id="@android:id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_share"
+                android:text="SHARE"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#FF59302A"
+                android:gravity="center"
+                android:visibility="visible"
+                />
+        </io.intrepid.socialtunes.ui.ClippedFrameLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
