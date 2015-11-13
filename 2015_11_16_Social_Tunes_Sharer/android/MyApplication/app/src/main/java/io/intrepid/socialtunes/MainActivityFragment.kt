@@ -11,6 +11,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 
+private data class Coord(val x: Int, val y: Int)
+private val tmpCoord = IntArray(2)
+private val tmpRect = Rect()
+
+private fun <T> View.applyScreenLocationTo(body: (xy: IntArray) -> T): T {
+    getLocationOnScreen(tmpCoord)
+    return body(tmpCoord)
+}
+
+private fun View.contains(coord: Coord): Boolean = applyScreenLocationTo {
+    tmpRect.set(it[0], it[1], it[0] + width, it[1] + height)
+    tmpRect.contains(coord.x, coord.y)
+}
+
 /**
  * A placeholder fragment containing a simple view.
  */
@@ -34,7 +48,7 @@ class MainActivityFragment : Fragment() {
         sharingButtons = view.findViewById(R.id.sharing_buttons)
 
         fun v(@IdRes id: Int): View? = view.findViewById(id)
-        buttonList = listOf(v(R.id.button1), v(R.id.button2), v(R.id.button3), null)
+        buttonList = listOf(v(R.id.button1), v(R.id.button2), v(R.id.button3))
 
         shareButton?.setOnClickListener {
             val width = (shareButton?.width ?: 0).toFloat()
@@ -49,32 +63,17 @@ class MainActivityFragment : Fragment() {
             sharingButtons?.animate()?.translationX(0f)
         }
 
-        val tmpCoord = IntArray(2)
-        val tmpRect = Rect()
-        val isInView = { view: View?, x: Int, y: Int ->
-            if (view == null) {
-                true
-            }
-            else {
-                view.getLocationOnScreen(tmpCoord)
-
-                tmpRect.set(tmpCoord[0], tmpCoord[1], tmpCoord[0] + view.width, tmpCoord[1] + view.height)
-                tmpRect.contains(x, y)
-            }
-        }
-
         sharingButtons?.setOnTouchListener { v, event ->
             val action = event.action
 
             if ((action == MotionEvent.ACTION_DOWN) || (action == MotionEvent.ACTION_UP)) {
-                v.getLocationOnScreen(tmpCoord)
+                val coord = v.applyScreenLocationTo {
+                    Coord(it[0] + Math.round(event.x), it[1] + Math.round(event.y))
+                }
 
-                val clickX = tmpCoord[0] + Math.round(event.x)
-                val clickY = tmpCoord[1] + Math.round(event.y)
-
-                val targetButton = buttonList?.filter {
-                    isInView(it, clickX, clickY)
-                }?.get(0)
+                val targetButton = buttonList?.firstOrNull {
+                    it?.contains(coord) ?: false
+                }
 
                 if (action == MotionEvent.ACTION_UP) {
                     clickedButton = targetButton
