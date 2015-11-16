@@ -10,6 +10,8 @@ Social Tunes Sharer, by Aaron Tenbuuren [https://dribbble.com/shots/2316603-Soci
 
 ### iOS
 
+Bryan Weber [https://github.com/weberbry/Animations/tree/master/Social_Tunes_Sharer]
+
 
 
 
