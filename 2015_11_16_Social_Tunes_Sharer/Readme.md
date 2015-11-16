@@ -12,6 +12,7 @@ Social Tunes Sharer, by Aaron Tenbuuren [https://dribbble.com/shots/2316603-Soci
 
 - Bryan Weber [https://github.com/weberbry/Animations/tree/master/Social_Tunes_Sharer]
 - Paul Rolfe [https://github.com/paulrolfe/pr_animation_club/tree/master/AnimationClub1]
+- Lu Quan Tan [https://github.com/luquantan/ShareButton]
 
 
 
