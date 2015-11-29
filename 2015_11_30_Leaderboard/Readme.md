@@ -6,7 +6,7 @@ Leaderboard, by Eddy Gann [https://dribbble.com/shots/2341854-Leaderboard]
 
 ## Example Implementations
 
-### Andriod
+### Android
 
 ### iOS
 
