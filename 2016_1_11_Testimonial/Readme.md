@@ -10,6 +10,8 @@ Testimonials, by Eddy Gann [https://dribbble.com/shots/2396576-Testimonials]
 
 ### iOS
 
+Bryan Weber [https://github.com/weberbry/Animations/tree/master/Testimonials]
+
 
 
 
