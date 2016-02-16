@@ -10,7 +10,4 @@ Boarding Pass, by Eddy Gann [https://dribbble.com/shots/2355011-Boarding-Pass-In
 
 ### iOS
 
-
-
-
-
+Andrew Dolce [https://github.com/andrewdolce/ip-animation-club/tree/boarding-pass/boarding-pass]
