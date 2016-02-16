@@ -10,3 +10,4 @@ Music Cards, by Guilherme Schmitt [https://dribbble.com/shots/2313534-009-Music-
 
 ### iOS
 
+Andrew Dolce [https://github.com/andrewdolce/ip-animation-club/tree/music-cards/music-cards]

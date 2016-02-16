@@ -6,7 +6,7 @@ Social Tunes Sharer, by Aaron Tenbuuren [https://dribbble.com/shots/2316603-Soci
 
 ## Example Implementations
 
-### Andriod
+### Android
 - Anton Spaans [https://github.com/IntrepidPursuits/Animation_club/tree/android/2015_11_16_Social_Tunes_Sharer/android/MyApplication]
 
 ### iOS
@@ -14,8 +14,4 @@ Social Tunes Sharer, by Aaron Tenbuuren [https://dribbble.com/shots/2316603-Soci
 - Bryan Weber [https://github.com/weberbry/Animations/tree/master/Social_Tunes_Sharer]
 - Paul Rolfe [https://github.com/paulrolfe/pr_animation_club/tree/master/AnimationClub1]
 - Lu Quan Tan [https://github.com/luquantan/ShareButton]
-
-
-
-
-
+- Andrew Dolce [https://github.com/andrewdolce/ip-animation-club/tree/master/social-tunes-sharer]
