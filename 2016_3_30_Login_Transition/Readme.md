@@ -9,4 +9,5 @@ Greenhouse for iOS - Login Animation, by Ales Nesetril [https://dribbble.com/sho
 ### Android
 
 ### iOS
+- Paul Rolfe [https://github.com/paulrolfe/pr_animation_club/tree/master/LogIn_AnimationClub]
 
