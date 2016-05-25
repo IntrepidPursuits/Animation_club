@@ -8,5 +8,7 @@ Greenhouse for iOS - Smiler, by Wanda Arca [https://dribbble.com/shots/2619401-S
 
 ### Android
 
+Russell Wolf - https://github.com/russhwolf/SmileySwitch/
+
 ### iOS
 
