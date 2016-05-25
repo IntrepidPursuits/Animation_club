@@ -8,5 +8,7 @@ Swirl, by Aaron Tenbuuren
 
 ### Android
 
+Russell Wolf - https://github.com/russhwolf/Swirl
+
 ### iOS
 
