@@ -12,3 +12,4 @@ Russell Wolf - https://github.com/russhwolf/Swirl
 
 ### iOS
 
+Liz Vanderkloot - https://github.com/lizvdk/swirlAnimation
