@@ -10,3 +10,4 @@ Footer Swing In, by Karol Ortyl [https://dribbble.com/shots/1049151-Animated-app
 
 ### iOS
 
+Stephen Wong [https://github.com/wingchi/Swinging-Menu-Swift]
